@@ -1,0 +1,10 @@
+<div id="container-filho">
+  <h1>Componente filho</h1>
+  <button (click)="getInformacao()">Get informação</button>
+  <h3>{{ informacaoDoPai }}</h3>
+  <app-pai 
+  [recebeInformacaoDoFilho]="informacao"
+  (enviaInformacaoParaOFilho)="recebeInformacaoDoPai($event)"
+  >
+</app-pai>
+</div>
